@@ -49,6 +49,12 @@
 }
 </script>
 
+<!-- Vercel Web Analytics -->
+<script>
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+<script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
+
 <style>
   :root{
     --bg:#0c0f14; --bg2:#121722; --card:#161c29; --line:#232b3b;
@@ -226,8 +232,8 @@
         <h3>Что бесит</h3>
         <ul>
           <li>Нет приложений для Windows, Mac, браузеров и ТВ</li>
-          <li>Триал с автосписанием. Забыл отменить на седьмой день - деньги ушли</li>
-          <li>Геолокация иногда врет: выбираешь США, а сайты видят другую страну. Об этом пишут и в отзывах App Store</li>
+          <li>Триал с автос��исанием. Забыл отменить на седьмой день - деньги ушли</li>
+          <li>Геолокация иногда врет: выбираешь США, а сайты ��идят другую страну. Об этом пишут и в отзывах App Store</li>
           <li>Бесплатная версия медленная, локаций почти нет</li>
           <li>499 ₽ за месяц - дорого. Выгодно только при оплате на год вперед</li>
         </ul>
@@ -417,7 +423,7 @@ const CONFIG = {
   // Подставляем название бренда
   document.querySelectorAll(".alt-name").forEach(el => el.textContent = CONFIG.alt.name);
 
-  // Заполняем таблицу сравнения
+  // Запо��няем таблицу сравнения
   document.querySelectorAll("[data-alt]").forEach(el => {
     const k = el.getAttribute("data-alt");
     if (CONFIG.alt[k]) el.textContent = CONFIG.alt[k];
